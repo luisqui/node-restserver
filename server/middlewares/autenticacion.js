@@ -29,7 +29,7 @@ let verificaAdminRole = (req, res, next) => {
         return res.status(400).json({
             ok: false,
             err: {
-                message: `El rol ${usuario.role} no tiene permisos para hacer esta accion`
+                message: `El usuario no es administrador`
             }
         });
     }
